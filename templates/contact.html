@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+        #contact {
+            background-image: url("https://images.unsplash.com/photo-1736144654683-d5a9508891ac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMwfGlVSXNuVnRqQjBZfHxlbnwwfHx8fHw%3D"); /* Set the background image */
+            background-size: cover; 
+            padding: 60px 8% 40px;
+            text-align: center;
+}
+.section-title .sub-title {
+  font-size: 56px;
+  color: #d9dae7;
+  font-weight: 600;
+  margin-block-start: 0.5em;
+    margin-block-end: 0.x5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.section-title .title {
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@media (max-width: 560px) {
+  .header-bottom .bottom-left .name {
+    font-size: 40px;
+  }
+
+  .bottom-left .profession {
+    font-size: 20px;
+  }
+
+  .bottom-left .short-desc {
+    font-size: 18px;
+    padding-right: 20%;
+  }
+
+  .about-left img {
+    width: 80%;
+  }
+
+  .about-right .tab-links {
+    margin-right: 30px;
+    font-size: 20px;
+  }
+
+  .about-right .tab-contents ul li,
+  .about-right .tab-contents ul li span {
+    font-size: 18px;
+  }
+
+  #contact .content {
+    flex-wrap: wrap;
+  }
+
+  .content .contact-left,
+  .content .contact-right {
+    flex-basis: 100%;
+  }
+
+  .content .vl {
+    display: none;
+  }
+}
+body {
+        font-family: sans-serif;
+        /* background-image: url("https://images.unsplash.com/photo-1736144654683-d5a9508891ac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDMwfGlVSXNuVnRqQjBZfHxlbnwwfHx8fHw%3D"); /* Set the background image */
+        /* background-size: cover; Cover the entire viewport */ 
+        /* background-repeat: no-repeat; Prevent repeating the image */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        color: rgb(0, 0, 0); /* Set text color to white for contrast */
+      }
+
+#contact .section-title .sub-title {
+  color: hwb(0 4% 95%);
+}
+
+#contact .content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.content .contact-left,
+.content .contact-right {
+  flex-basis: 50%;
+}
+
+.content .contact-left form {
+  width: 100%;
+
+}
+
+.contact-left form input,
+.contact-left form textarea,
+.contact-left form button {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5); /* Make the form semi-transparent */
+  color: #120f2d;
+  resize: none;
+  font-size: 20px;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.contact-left form button {
+  background: #000;
+  color: #f7f7f7;
+  font-weight: 500;
+  margin: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.content .vl {
+  border-left: 5px solid #fff;
+  height: 350px;
+}
+
+.content .contact-right {
+  text-align: left;
+}
+
+.contact-right .col {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.contact-right .col i {
+  font-size: 33px;
+  margin-right: 20px;
+  margin-block-start: 0.7em;
+  margin-block-end:0.7em
+}
+
+.col .info .title {
+  font-size: 33px;
+  margin-block-start: 0.8em;
+  margin-block-end: 0.8em;
+}
+
+.copyright {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 60px;
+  font-size:18px;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #120f2d;
+  font-size:18px;
+}
+
+.copyright a:hover {
+  color: #fff;
+}
+
+
+    </style>
+</head>
+<body>
+    <section id="contact">
+        <div class="section-title">
+          <h2 class="sub-title">Contact</h2>
+          <h3 class="title">Get in Touch</h3>
+        </div>
+        <div class="content">
+          <div class="contact-left">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit">
+                Send Message <a href="mailto:karthikbatta6503@gmail.com"></a>
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+          <div class="vl"></div>
+          <div class="contact-right">
+            <div class="col address">
+                <i class="fa-brands fa-linkedin-in"></i>
+              <div class="info">
+                <h2 class="title">Linked In</h2>
+                <!-- <p>7-88,Vidyanagar,Chirala,Prakasam</p> -->
+              </div>
+            </div>
+            <div class="col phone">
+                <i class="fa-brands fa-github"></i>
+              <div class="info">
+                <h2 class="title">GitHub</h2>
+                <!-- <p>+91 939 8289 298</p> -->
+              </div>
+            </div>
+            <div class="col email">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="info">
+                <h2 class="title">Email</h2>
+                <!-- <p>karthik@karthikbatta.me</p> -->
+              </div>
+            </div>
+            <div class="col website">
+              <i class="fa-solid fa-globe"></i>
+              <div class="info">
+                <h2 class="title">Website</h2>
+                <!-- <p>www.karthikbatta.me</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p> Made with
+            <i class="fa-solid fa-heart"></i> by
+            <a href="#">Karthik</a>
+          </p>
+        </div>
+      </section>
+</body>
+</html>
